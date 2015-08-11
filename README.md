@@ -1,11 +1,12 @@
 # FNA-Style-Guide-iOS
+
 The Objective-C Style Guide used by Fábio Nogueira
 
 ## Table of Contents
 
 * [Linguagem](#linguagem)
-* [Organização de código](#organizacao-de-codigo)
 * [Quando utilizar ponto](#quando-utilizar-ponto)
+* [Organização de código](#organizacao-de-codigo)
 * [Espaços](#espacos)
 * [Padrão para declarações](#padrão-para-declarações)
 * [Nomenclatura](#Nomenclatura)
