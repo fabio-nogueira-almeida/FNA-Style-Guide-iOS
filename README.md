@@ -1,6 +1,6 @@
-# FNA-Style-Guide-iOS
+# FNA-Style-Guide-iOS-pt-BR
 
-The Objective-C Style Guide used by Fábio Nogueira
+The Objective-C Style Guide utilizado por Fábio Nogueira
 
 ## Table of Contents
 
@@ -9,14 +9,12 @@ The Objective-C Style Guide used by Fábio Nogueira
 * [Organização de código](#organização-de-código)
 * [Espaços](#espaços)
 * [Padrão para declarações](#padrão-para-declarações)
-* [Nomenclatura](#Nomenclatura)
-* [Underscores](#underscores)
+* [Nomenclatura](#nomenclatura)
 * [Métodos](#métodos)
 * [Variáveis](#variáveis)
 * [Propriedades](#propriedades)
 * [Sintaxe Dot-Notation](#sintaxe-dot-notation)
 * [Literais](#literais)
-* [Constantes](#constantes)
 * [Tipos enumerados](#tipos-enumerados)
 * [Sintaxe Case](#sintaxe-case)
 * [Booleanos](#booleanos)
@@ -374,7 +372,7 @@ static CGFloat const RWTImageThumbnailHeight = 50.0;
 #define thumbnailHeight 2
 ```
 
-## Tipos enumarados
+## Tipos enumerados
 
 Ao usar enums, recomenda-se a usar a nova especificação do tipo fixo subjacente porque tem forte verificação de tipo e conclusão de código. O SDK inclui agora uma macro para facilitar e incentivar a utilização de tipos subjacentes fixos: NS_ENUM ()
 
@@ -493,7 +491,7 @@ Utilizar convenção padrão da apple para a inicialização e sempre utilizar i
 ```
 
 
-## Méodos construtores de classes
+## Métodos construtores de classes
 
 Quando são utilizados métodos construtores da classe, estes devem sempre retornar tipo de 'instancetype' e nunca 'id'. Isso garante que o compilador infere corretamente o tipo de resultado.
 
