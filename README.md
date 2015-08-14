@@ -22,6 +22,7 @@ The Objective-C Style Guide utilizado por Fábio Nogueira
 * [Métodos Construtores de classes ](#métodos-construtores-de-classes)
 * [Funções CGRect](#funções-cgrect)
 * [Singletons](#singletons)
+* [TableView](#tableview)
 
 
 ## Linguagem
@@ -547,4 +548,12 @@ Singleton objects should use a thread-safe pattern for creating their shared ins
 
   return sharedInstance;
 }
+```
+
+## TableView
+
+Padrão para registro de celulas
+
+```objc
+[tableview registerClass:[MyCell class] forCellReuseIdentifier:NSStringFromClass([MyCell class])];
 ```
