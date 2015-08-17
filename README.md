@@ -552,8 +552,18 @@ Singleton objects should use a thread-safe pattern for creating their shared ins
 
 ## TableView
 
-Padrão para registro de celulas
+Utilizar o próprio nome da classe para definir os identificadores
 
 ```objc
 [tableview registerClass:[MyCell class] forCellReuseIdentifier:NSStringFromClass([MyCell class])];
+```
+
+
+```objc
+[self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([GameCell class]) bundle:[NSBundle mainBundle]]
+     forCellReuseIdentifier:NSStringFromClass([GameCell class])];
+```
+
+```objc
+GameCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([GameCell class]) forIndexPath:indexPath];
 ```
